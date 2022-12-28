@@ -1,11 +1,12 @@
 import { Toaster } from 'react-hot-toast';
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import RoomUpload from './component/RoomUpload';
+import { router } from './routes/Routes';
 
 function App() {
   return (
     <div>
-      <RoomUpload></RoomUpload>
+      <RouterProvider router={router}></RouterProvider>
       <Toaster
         position="top-center"
         reverseOrder={false}
